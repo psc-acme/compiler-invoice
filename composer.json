@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/compiler-invoice",
+    "description": "Package compiler-invoice for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\CompilerInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "nikic/php-parser": "^5.0",
+        "symfony/symfony": "^6.3",
+        "psr/cache": "^3.0",
+        "predis/predis": "^2.0",
+        "league/commonmark": "^2.0",
+        "firebase/php-jwt": "^6.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
